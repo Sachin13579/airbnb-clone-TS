@@ -1,6 +1,7 @@
 import {Nunito } from 'next/font/google';
 import './globals.css'
 import Navbar from './components/Navbar/Navbar';
+import Modal from './components/Modal/Modal';
 
 export const metadata = {
   title: 'Airbnb',
@@ -18,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
+        <Modal onClose={()=>{}} onSubmit={()=>{}}secondaryAction={()=>{}} actionLabel='Submit' title='Login' isOpen/>
         <Navbar/>
         {children}
         </body>
